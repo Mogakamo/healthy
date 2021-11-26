@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -43,4 +44,14 @@ dependencies {
 
     // Maps
     implementation 'com.google.maps.android:maps-utils-ktx:3.2.0'
+    // KTX for the Maps SDK for Android library
+    implementation 'com.google.maps.android:maps-ktx:3.2.0'
+
+    // KTX for the Maps SDK for Android Utility Library
+    implementation 'com.google.maps.android:maps-utils-ktx:3.2.0'
+
+    // It is recommended to also include the latest Maps SDK and/or Utility Library versions
+    // as well to ensure that you have the latest features and bug fixes.
+    implementation 'com.google.android.gms:play-services-maps:<latest-version>'
+    implementation 'com.google.maps.android:android-maps-utils:<latest-version>'
 }
